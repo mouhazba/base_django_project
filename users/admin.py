@@ -10,7 +10,7 @@ from .forms import CustomUserForm, CustomUserFormChange
 CustomeUser = get_user_model()
 
 class CutomeUserAdmin(UserAdmin):
-    add_form: CustomUserForm
+    add_form = CustomUserForm
 
     form = CustomUserFormChange
 
